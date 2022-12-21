@@ -1,0 +1,105 @@
+.footinfo {
+  width: 100%;
+  @include flex_jcc();
+  background-color: $bg-grey-black;
+  padding: 60px 0;
+  .container {
+    width: 85%;
+    .footinfo-flex {
+      @include flex_jcsb();
+      .footinfo-item {
+        padding: 30px;
+        .title {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.4em;
+          letter-spacing: -0.15px;
+          color: $white;
+          padding-bottom: 30px;
+          text-align: left;
+        }
+        .footinfo-menu {
+          display: flex;
+          flex-direction: column;
+          li {
+            a {
+              text-decoration: none;
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 1.6em;
+              color: $light-grey;
+              transition: -0.3s;
+            }
+            &:not(:last-child) {
+              padding-bottom: 12px;
+            }
+            &:hover {
+              a {
+                color: $white;
+              }
+            }
+          }
+        }
+        .connect-menu {
+          display: flex;
+          flex-direction: row;
+          li {
+            a {
+              font-size: 18px;
+              color: $white;
+              transition: 0.3s;
+            }
+            &:not(:last-child) {
+              padding-right: 20px;
+            }
+            &:hover {
+              a {
+                color: $turquoise;
+              }
+            }
+          }
+        }
+      }
+      .contact-info {
+        img {
+          width: 160px;
+          padding-bottom: 30px;
+        }
+        p {
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 1.6em;
+          color: $light-grey;
+        }
+        .call {
+          color: $white;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.4em;
+          letter-spacing: -0.15px;
+          padding: 10px 0 25px;
+        }
+        .email-btn {
+          a {
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1;
+            color: $turquoise;
+            border: 1px solid $turquoise;
+            border-radius: 4px;
+            background-color: transparent;
+            padding: 7px 12px;
+            transition: 0.3s;
+          }
+          &:hover {
+            a {
+              background-color: $turquoise;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

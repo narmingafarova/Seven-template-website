@@ -1,0 +1,23 @@
+.scroll {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 3px;
+  text-align: center;
+  color: $white;
+  background-color: #00000054;
+  transition: 1s;
+  z-index: 3;
+  i {
+    font-size: 32px;
+  }
+  &:hover {
+    color: $white;
+    background-color: #00000080;
+  }
+}

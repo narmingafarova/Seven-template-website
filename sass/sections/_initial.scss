@@ -1,0 +1,179 @@
+.initial {
+  width: 100%;
+  @include flex_jcc();
+  @include section_bg_img();
+  margin-bottom: 150px;
+  .nav-shadow {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, #00000080 0%, #00000000 100%);
+    z-index: 5;
+  }
+  .el-shape {
+    bottom: -1px;
+  }
+  .container {
+    width: 85%;
+    header {
+      width: 100%;
+      @include flex_sbc();
+      .logo {
+        width: 15%;
+        z-index: 10;
+      }
+      nav {
+        width: 60%;
+        @include flex_sbc();
+        z-index: 10;
+        .menu {
+          width: 80%;
+          @include flex_sbc();
+          flex-wrap: wrap;
+          min-height: 100px;
+          li {
+            height: 100%;
+            a {
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: 500;
+              color: $white;
+              position: relative;
+              height: 100%;
+              line-height: 1.6em;
+              &:hover {
+                color: $turquoise;
+              }
+              // &::after {
+              //   height: 3px;
+              //   width: 100%;
+              //   content: "";
+              //   position: absolute;
+              //   left: 0;
+              //   bottom: 100%;
+              //   background-color: $turquoise;
+              //   z-index: 11;
+              // }
+            }
+          }
+        }
+        .menu-icons {
+          width: 13%;
+          @include flex_jcsb();
+          li {
+            a {
+              color: $white;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .initial-content-img {
+      display: flex;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      .initial-content {
+        width: 50%;
+        margin: 90px 0 30px;
+        padding: 30px 30px 10px;
+        color: $white;
+        z-index: 10;
+        .title-widget {
+          display: inline-block;
+          padding: 6px 5px 6px 10px;
+          background-color: #ffffff40;
+          border-radius: 3px 3px 3px 3px;
+          text-align: center;
+          margin-bottom: 40px;
+          h2 {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+          }
+        }
+        .initial-data-widget {
+          margin-bottom: 30px;
+          h2 {
+            font-size: 46px;
+            line-height: 1.3em;
+          }
+        }
+        .initial-text {
+          margin-bottom: 40px;
+          p {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.5em;
+          }
+        }
+        .initial-btn-buy {
+          display: inline-block;
+          margin: 0 20px 90px 0;
+          a {
+            min-height: 52px;
+            min-width: 220px;
+            text-decoration: none;
+            color: $white;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1;
+            border-radius: 5px;
+            border-color: $btn-light-grey;
+            padding: 15px 50px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+            background-color: $turquoise;
+            transition: 0.3s;
+            &:hover {
+              background-color: $blue;
+            }
+          }
+        }
+        .initial-btn-dis {
+          display: inline-block;
+          a {
+            text-decoration: none;
+            min-width: 220px;
+            min-height: 52px;
+            border: 1px solid $btn-dis-light-grey;
+            border-radius: 5px;
+            transition: 0.3s;
+            padding: 13px 20px;
+            color: $white;
+            i {
+              margin-left: 12px;
+            }
+            &:hover {
+              border-color: $white;
+            }
+          }
+        }
+      }
+      .initial-img {
+        width: 45%;
+        position: absolute;
+        top: 15%;
+        right: 0;
+        img {
+          width: 100%;
+          border-radius: 10px 10px 10px 10px;
+        }
+      }
+    }
+    .initial-img-over {
+      width: 21%;
+      position: absolute;
+      bottom: -13%;
+      right: 32%;
+      z-index: 3;
+      img {
+        width: 100%;
+        border-radius: 6px 6px 6px 6px;
+      }
+    }
+  }
+}

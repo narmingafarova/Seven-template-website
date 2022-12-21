@@ -1,0 +1,16 @@
+.el-shape {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  svg {
+    width: calc(110% + 1.3px);
+    height: 90px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    path {
+      fill: $white;
+    }
+  }
+}

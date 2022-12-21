@@ -1,0 +1,29 @@
+.brends {
+  width: 100%;
+  @include flex_jcc();
+  margin-top: 60px;
+  .container {
+    width: 85%;
+    .title {
+      margin-bottom: 40px;
+    }
+    .brends-list {
+      @include flex_jcsb();
+      flex-direction: row;
+      .brend {
+        width: 180px;
+        color: #ffffff00;
+        img {
+          width: 100%;
+          filter: opacity(50%);
+          transition: 0.3s;
+        }
+        &:hover {
+          img {
+            filter: none;
+          }
+        }
+      }
+    }
+  }
+}

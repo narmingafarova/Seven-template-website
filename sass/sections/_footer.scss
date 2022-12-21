@@ -1,0 +1,45 @@
+footer {
+  width: 100%;
+  @include flex_jcsb();
+  background-color: $bg-grey-black;
+  padding: 20px;
+  border-top: 1px solid #ffffff1f;
+  .container {
+    width: 85%;
+    .footer-items {
+      @include flex_jcc();
+      text-align: center;
+      margin: 0 auto;
+      .copy {
+        width: 25%;
+      }
+      .foot-text {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.4em;
+        color: $light-grey;
+        li {
+          a {
+            @extend .foot-text;
+            text-decoration: none;
+            transition: 0.3s;
+          }
+        }
+      }
+      .foot-menu {
+        width: 35%;
+        @include flex_jcsb();
+        flex-direction: row;
+        li {
+          padding-left: 20px;
+          border-left: 1px solid $soft-grey;
+          &:hover {
+            a {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

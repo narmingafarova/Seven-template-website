@@ -1,0 +1,28 @@
+// Helpers
+@import "helpers/reset";
+@import "helpers/var";
+@import "helpers/mixin";
+@import "helpers/bg_over";
+@import "helpers/shape";
+@import "helpers/title";
+@import "helpers/scroll";
+
+// Sections
+@import "sections/initial";
+@import "sections/profit";
+@import "sections/whowe";
+@import "sections/choose";
+@import "sections/clients";
+@import "sections/projects";
+@import "sections/brends";
+@import "sections/contact";
+@import "sections/footinfo";
+@import "sections/footer";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}

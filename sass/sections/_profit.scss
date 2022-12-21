@@ -1,0 +1,63 @@
+.profits {
+  width: 100%;
+  @include flex_jcc();
+  margin-bottom: 60px;
+  .container {
+    width: 85%;
+    .profit-cards {
+      @include flex_sbc();
+      padding: 30px;
+      .profit-card-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .profit-icon {
+          margin-bottom: 50px;
+          text-align: center;
+          a {
+            padding: 32px 36px;
+            border-radius: 100% 100% 100% 100%;
+            background: $soft-blue;
+            font-size: 48px;
+            transition: 0.3s;
+            i {
+              color: $turquoise;
+              transition: 0.3s;
+            }
+          }
+          &:hover {
+            a {
+              background-color: $turquoise;
+              i {
+                color: $white;
+              }
+            }
+          }
+        }
+        .profit-info {
+          h4 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.4em;
+            letter-spacing: -0.25px;
+            margin-bottom: 10px;
+            a {
+              text-decoration: none;
+              color: $dark-grey;
+            }
+          }
+          p {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.6em;
+            color: $soft-grey;
+            span {
+              color: $turquoise;
+            }
+          }
+        }
+      }
+    }
+  }
+}

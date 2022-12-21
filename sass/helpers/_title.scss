@@ -1,0 +1,17 @@
+.title {
+  text-align: center;
+  .title-widget {
+    display: inline-block;
+    padding: 6px 5px 6px 10px;
+    background-color: $soft-blue;
+    border-radius: 3px 3px 3px 3px;
+    text-align: center;
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: $turquoise;
+    }
+  }
+}

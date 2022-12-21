@@ -1,0 +1,63 @@
+.clients {
+  width: 100%;
+  @include flex_jcc();
+  @include section_bg_img();
+  margin: 90px 0;
+  padding: 60px 0;
+  .container {
+    width: 85%;
+    .title {
+      .title-widget {
+        margin-bottom: 60px;
+        h2 {
+          color: $white;
+        }
+      }
+    }
+    .client-cards {
+      width: 100%;
+      @include flex_jcsb();
+      .client-card-item {
+        width: 47%;
+        @include flex_jcsb();
+        .client-img {
+          max-width: 120px;
+          img {
+            height: auto;
+            max-width: 100%;
+            border-radius: 100px;
+          }
+        }
+        .client-info {
+          width: 75%;
+          @include flex_jcsb();
+          flex-direction: column;
+          .client-desc {
+            font-size: 18px;
+            font-style: italic;
+            line-height: 1.6em;
+            letter-spacing: -0.2px;
+            color: $white;
+            margin-bottom: 25px;
+          }
+          .client-data {
+            h4 {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 1.4em;
+              letter-spacing: -0.15px;
+              color: $white;
+              margin-bottom: 7px;
+            }
+            h6 {
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 1.6em;
+              color: $light-grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}

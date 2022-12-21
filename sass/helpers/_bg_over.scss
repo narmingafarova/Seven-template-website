@@ -1,0 +1,14 @@
+.el-bg-over {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(https://the7.io/elementor-main/wp-content/uploads/sites/77/2022/01/blob-scene-the7-03.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.33;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}

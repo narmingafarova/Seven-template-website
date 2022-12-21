@@ -1,0 +1,25 @@
+@mixin section_bg_img {
+  background-image: url(https://the7.io/elementor-main/wp-content/uploads/sites/77/2022/02/bbblurry-67.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: $bg-dark-blue;
+  position: relative;
+}
+
+@mixin flex_sbc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex_jcc {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex_jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+

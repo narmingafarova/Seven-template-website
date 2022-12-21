@@ -1,0 +1,75 @@
+.contact {
+  width: 100%;
+  @include flex_jcc();
+  @include section_bg_img();
+  .el-shape {
+    top: -1px;
+  }
+  .container {
+    width: 85%;
+    z-index: 3;
+    margin-top: 150px;
+    .title {
+      .title-widget {
+        margin-bottom: 40px;
+        h2 {
+          color: $white;
+        }
+      }
+    }
+    .contact-context {
+      text-align: center;
+      margin: 0 auto;
+      h4 {
+        max-width: 750px;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.35em;
+        letter-spacing: -0.25px;
+        color: $white;
+        margin: 0 auto 50px;
+      }
+      .initial-btn-buy {
+        display: inline-block;
+        margin: 0 20px 90px 0;
+        a {
+          min-height: 52px;
+          min-width: 220px;
+          text-decoration: none;
+          color: $white;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 1;
+          border-radius: 5px;
+          border-color: $btn-light-grey;
+          padding: 15px 50px;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+          background-color: $turquoise;
+          transition: 0.3s;
+          &:hover {
+            background-color: $blue;
+          }
+        }
+      }
+      .initial-btn-dis {
+        display: inline-block;
+        a {
+          text-decoration: none;
+          min-width: 220px;
+          min-height: 52px;
+          border: 1px solid $btn-dis-light-grey;
+          border-radius: 5px;
+          transition: 0.3s;
+          padding: 13px 20px;
+          color: $white;
+          i {
+            margin-left: 12px;
+          }
+          &:hover {
+            border-color: $white;
+          }
+        }
+      }
+    }
+  }
+}
